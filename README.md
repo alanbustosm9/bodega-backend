@@ -8,6 +8,8 @@
 4. [express-validator](https://www.npmjs.com/package/express-validator)
 5. [mongoose](https://mongoosejs.com/)
 6. [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+7. [jwt](https://jwt.io/introduction)
+8. [cors](https://www.npmjs.com/package/cors)
 
 ## Developer :smiley: Alan Henry Bustos Mora
 
