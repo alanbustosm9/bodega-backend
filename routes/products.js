@@ -16,16 +16,27 @@ router.get("/", getProducts);
 
 router.post(
   "/",
-  [check("name", "El nombre es obligatorio").not().isEmpty()],
-  [check("quantity", "Debe ingresar una cantidad").not().isEmpty()],
-  [check("price", "Debe ingresar un precio").not().isEmpty()],
-  [check("description", "La descripcion es obligatoria").not().isEmpty()],
-  validator,
-
+  [
+    check("name", "El nombre es obligatorio").not().isEmpty(),
+    check("quantity", "Debe ingresar una cantidad").not().isEmpty(),
+    check("price", "Debe ingresar un precio").not().isEmpty(),
+    check("description", "La descripcion es obligatoria").not().isEmpty(),
+    validator,
+  ],
   addProduct
 );
 
-router.put("/:id", editProduct);
+router.put(
+  "/:id",
+  [
+    check("name", "El nombre es obligatorio").not().isEmpty(),
+    check("quantity", "Debe ingresar una cantidad").not().isEmpty(),
+    check("price", "Debe ingresar un precio").not().isEmpty(),
+    check("description", "La descripcion es obligatoria").not().isEmpty(),
+    validator,
+  ],
+  editProduct
+);
 
 router.delete("/:id", deleteProduct);
 
