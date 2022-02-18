@@ -6,6 +6,7 @@
 2. [express](https://www.npmjs.com/package/express)
 3. [dotenv](https://www.npmjs.com/package/dotenv)
 4. [express-validator](https://www.npmjs.com/package/express-validator)
+5. [mongoose](https://mongoosejs.com/)
 
 ## Developer :smiley: Alan Henry Bustos Mora
 
